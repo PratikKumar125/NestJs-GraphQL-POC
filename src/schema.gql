@@ -1,0 +1,47 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateUserInput {
+  age: Float!
+  email: String!
+  gender: String!
+  name: String!
+}
+
+type Mutation {
+  createPoll(name: String!): Poll!
+  createUser(createUserInputs: CreateUserInput!): User!
+  enrollToPoll(pollId: Float!, userId: Float!): UserPoll!
+}
+
+type Poll {
+  id: Int!
+  name: String!
+  votes: [Votes!]!
+}
+
+type Query {
+  getUserInfo(id: Int!): User!
+}
+
+type User {
+  age: Float
+  email: String
+  gender: String
+  id: Int!
+  name: String!
+  polls: [Poll!]!
+}
+
+type UserPoll {
+  id: Float!
+  poll_id: Float!
+  user_id: Float!
+}
+
+type Votes {
+  id: Int!
+  poll_id: Float
+  user_id: Float
+}

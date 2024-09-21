@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@config/*": [
+        "config/*"
+      ],
+      "@libs/boat": [
+        "libs/boat/src"
+      ],
+      "@libs/boat/*": [
+        "libs/boat/src/*"
+      ],
+      "@libs/user": [
+        "libs/user/src"
+      ],
+      "@libs/user/*": [
+        "libs/user/src/*"
+      ],
+      "@libs/database": [
+        "libs/database/src"
+      ],
+      "@libs/database/*": [
+        "libs/database/src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
