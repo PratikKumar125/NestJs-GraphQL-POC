@@ -8,7 +8,7 @@
   "keywords": [
     "nestjs-graphql",
     "nestjs",
-    "nestjs-starter-template",
+    "nestjs-starter-template"
   ],
   "scripts": {
     "prebuild": "rimraf dist",
